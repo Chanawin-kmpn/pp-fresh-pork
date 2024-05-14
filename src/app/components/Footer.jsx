@@ -4,13 +4,14 @@ function Footer() {
   return (
     <footer className="bg-white flex flex-col items-center">
       <div className="self-center flex gap-8 mx-auto px-20 py-16">
-        <Image
-          className="w-full max-w-[160px] object-contain"
-          src="/Logos/PPFreshPork No Logo.png"
-          width={160}
-          height={116}
-          alt="Logo"
-        />
+        <div className="min-w-[160px]">
+          <Image
+            src="/assets/images/logo/ppfreshpork-logo.png"
+            width={160}
+            height={116}
+            alt="Logo"
+          />
+        </div>
         <div className="flex flex-col gap-[10px] max-w-[448px]">
           <h5 className="text-h5 font-bold w-fit">
             บริษัท พี.พี. เฟรชพอร์ค จำกัด

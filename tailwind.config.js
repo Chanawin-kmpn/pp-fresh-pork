@@ -32,6 +32,10 @@ module.exports = {
         normal: "400",
         bold: "700",
       },
+      backgroundImage: {
+        "left-bt-meat": "url('/assets/images/background/left-bt-meat-bg.png')",
+        "right-t-meat": "url('/assets/images/background/right-t-meat-bg.png')",
+      },
     },
     colors: {
       // Brand Colors

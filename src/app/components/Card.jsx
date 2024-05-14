@@ -1,0 +1,36 @@
+import React from "react";
+import { products } from "../data/products";
+import "../card.css";
+import Link from "next/link";
+
+function Card() {
+  return (
+    <ul className="product-cards-container flex flex-wrap gap-8">
+      {products.map((product) => (
+        <Link
+          key={product.productId}
+          href={`/products/${product.productId}`}
+          passHref
+        >
+          <li className="card flex-1 flex flex-col min-w-[256px] xl:max-w-[256px] 2xl:max-w-[288px] h-[400px] rounded-lg overflow-hidden shadow-md">
+            <div className="product-image">
+              <img src={product.productImg} alt="product image" />
+            </div>
+            <div className="product-detail relative flex-1 flex flex-col gap-4 justify-center items-center left-bottom-bg right-top-bg ">
+              <p className="text-lg font-bold text-primary z-10">
+                {product.name}
+              </p>
+              <p className="text-gray2 z-10">
+                {product.productSize >= 1000
+                  ? "1 กิโลกรัม"
+                  : `${product.productSize} กรัม`}
+              </p>
+            </div>
+          </li>
+        </Link>
+      ))}
+    </ul>
+  );
+}
+
+export default Card;

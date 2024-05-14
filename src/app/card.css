@@ -1,0 +1,30 @@
+.left-bottom-bg::before,
+.right-top-bg::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 45%; /* equivalent to w-1/2 */
+  height: 100%; /* equivalent to h-full */
+  opacity: 0.5;
+  transition: transform 250ms ease-out;
+}
+
+.card:hover .left-bottom-bg::before,
+.card:hover .right-top-bg::after {
+  transform: scale(1.1);
+}
+
+.left-bottom-bg::before {
+  background-image: url(/assets/images/background/left-bt-meat-bg.png);
+  background-position: 0 100%;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+}
+
+.right-top-bg::after {
+  background-image: url(/assets/images/background/right-t-meat-bg.png);
+  right: 0;
+  transform-origin: right top;
+}
