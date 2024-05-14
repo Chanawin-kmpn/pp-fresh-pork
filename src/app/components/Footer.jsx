@@ -10,6 +10,7 @@ function Footer() {
             width={160}
             height={116}
             alt="Logo"
+            priority={true}
           />
         </div>
         <div className="flex flex-col gap-[10px] max-w-[448px]">

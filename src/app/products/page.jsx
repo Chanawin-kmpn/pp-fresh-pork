@@ -1,8 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { categories } from "../data/categories";
-import Card from "../components/Card";
+import Paginator from "../components/Paginator";
+import { products } from "../data/products";
 
 function Product() {
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+
+  useEffect(() => {
+    const handleresize = () => {
+      setItemsPerPage(window.innerWidth > 1536 ? 12 : 9);
+    };
+
+    handleresize();
+
+    window.addEventListener("resize", handleresize);
+
+    return () => {
+      window.removeEventListener("resize", handleresize);
+    };
+  }, []);
   return (
     <div className="container flex gap-8 mx-auto">
       <section className="filter-section flex-2 w-[256px]">
@@ -46,9 +64,8 @@ function Product() {
           </div>
         </form>
       </section>
-      <section className="product-section flex-1 flex flex-col gap-16">
-        <Card />
-        <div className="pagegination"></div>
+      <section className="product-section flex-1">
+        <Paginator items={products} itemsPerPage={itemsPerPage} />
       </section>
     </div>
   );

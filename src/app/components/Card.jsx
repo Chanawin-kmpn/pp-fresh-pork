@@ -1,12 +1,11 @@
 import React from "react";
-import { products } from "../data/products";
 import "../card.css";
 import Link from "next/link";
 
-function Card() {
+function Card({ currentItems }) {
   return (
     <ul className="product-cards-container flex flex-wrap gap-8">
-      {products.map((product) => (
+      {currentItems.map((product) => (
         <Link
           key={product.productId}
           href={`/products/${product.productId}`}

@@ -18,6 +18,7 @@ function Nav() {
         width={160}
         height={116}
         alt="Logo"
+        priority={true}
       />
       <ul className="flex gap-8">
         <li>
