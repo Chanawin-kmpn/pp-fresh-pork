@@ -1,0 +1,8 @@
+.main-bg {
+  background-image: url(/assets/images/backgrounds/meat-bg-t-l.webp),
+    url(/assets/images/backgrounds/meat-bg-b-l.webp),
+    url(/assets/images/backgrounds/meat-bg-t-r.webp),
+    url(/assets/images/backgrounds/meat-bg-b-r.webp);
+  background-repeat: no-repeat;
+  background-position: top left, bottom left, top right, bottom right;
+}

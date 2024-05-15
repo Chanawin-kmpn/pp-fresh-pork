@@ -15,7 +15,7 @@ function Card({ currentItems }) {
             <div className="product-image">
               <img src={product.productImg} alt="product image" />
             </div>
-            <div className="product-detail relative flex-1 flex flex-col gap-4 justify-center items-center left-bottom-bg right-top-bg ">
+            <div className="product-detail relative flex-1 flex flex-col gap-4 justify-center items-center bg-white left-bottom-bg right-top-bg">
               <p className="text-lg font-bold text-primary z-10">
                 {product.name}
               </p>

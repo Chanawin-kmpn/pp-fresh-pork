@@ -7,6 +7,9 @@ import { products } from "../data/products";
 
 function Product() {
   const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [categoryValue, setCategoryValue] = useState(
+    categories[0]?.categoryId || 0
+  );
 
   useEffect(() => {
     const handleresize = () => {
@@ -23,8 +26,8 @@ function Product() {
   }, []);
   return (
     <div className="container flex gap-8 mx-auto">
-      <section className="filter-section flex-2 w-[256px]">
-        <form className="flex flex-col gap-2">
+      <section className="filter-section flex-2 w-[256px] bg-white p-4 rounded-md">
+        <form className="flex flex-col gap-2 sticky top-4">
           <label
             htmlFor="categories"
             className="text-lg font-bold text-primary"
@@ -36,6 +39,8 @@ function Product() {
               name="categories"
               className="w-full appearance-none border border-gray5 rounded-md px-4 py-2"
               id="categories"
+              onChange={(e) => setCategoryValue(Number(e.target.value))}
+              value={categoryValue}
             >
               {categories.map((category) => (
                 <option
@@ -65,7 +70,11 @@ function Product() {
         </form>
       </section>
       <section className="product-section flex-1">
-        <Paginator items={products} itemsPerPage={itemsPerPage} />
+        <Paginator
+          items={products}
+          itemsPerPage={itemsPerPage}
+          type={categoryValue}
+        />
       </section>
     </div>
   );

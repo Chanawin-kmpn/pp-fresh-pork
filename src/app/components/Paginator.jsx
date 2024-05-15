@@ -1,14 +1,25 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
-function Paginator({ items, itemsPerPage }) {
+function Paginator({ items, itemsPerPage, type }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(items.length / itemsPerPage);
+  const [filteredItems, setFilteredItems] = useState([]);
+
+  useEffect(() => {
+    const filterCategory = (items, type) => {
+      return items.filter((item) => item.categoryId === type);
+    };
+
+    setFilteredItems(filterCategory(items, type));
+    setCurrentPage(1); // Reset to first page whenever items or type changes
+  }, [items, type]);
+
+  const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
 
   const firstItemIndex = (currentPage - 1) * itemsPerPage;
   const lastItemIndex = firstItemIndex + itemsPerPage;
-  const currentItems = items.slice(firstItemIndex, lastItemIndex);
+  const currentItems = filteredItems.slice(firstItemIndex, lastItemIndex);
 
   const goToPage = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -21,7 +32,7 @@ function Paginator({ items, itemsPerPage }) {
   return (
     <div className="flex flex-col gap-16 h-full">
       <Card currentItems={currentItems} />
-      <div className="self-end mt-auto">
+      <div className="self-center mt-auto">
         <button
           className="font-bold"
           onClick={() => goToPage(currentPage - 1)}
