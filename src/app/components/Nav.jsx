@@ -28,7 +28,7 @@ function Nav() {
             }`}
             href="/products"
           >
-            หน้าแรก
+            ผลิตภัณฑ์
           </Link>
         </li>
         <li>
