@@ -10,7 +10,7 @@ const CertificationModal = () => {
       alt: "GMP Certificate",
     },
     {
-      src: "/assets/images/certificates/HACCP-certificate.png",
+      src: "/assets/images/certificates/HACCp-certificate.png",
       alt: "HACCP Certificate",
     },
   ];
