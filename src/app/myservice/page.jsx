@@ -14,8 +14,8 @@ function Service() {
             alt=""
           />
         </div>
-        <div className="flex-1 flex flex-col gap-4 bg-white p-4">
-          <h4 className="text-h4 font-bold text-primary">บริการของเรา</h4>
+        <div className="flex-1  bg-white p-4">
+          <h4 className="text-h4 font-bold text-primary mb-4">บริการของเรา</h4>
           <p className="text-nm text-gray2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
             nulla aut? Commodi excepturi libero dicta officiis deserunt quidem
@@ -25,8 +25,10 @@ function Service() {
         </div>
       </div>
       <div className="flex flex-col gap-8 bg-white p-4">
-        <div className="flex flex-col gap-4">
-          <h4 className="text-h4 font-bold text-primary">ใบรับรองของบริษัท</h4>
+        <div>
+          <h4 className="text-h4 font-bold text-primary mb-4">
+            ใบรับรองของบริษัท
+          </h4>
           <p className="text-nm text-gray2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
             expedita magni laudantium facere aliquid, quasi totam. Voluptatum

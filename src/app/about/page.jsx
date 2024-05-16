@@ -11,7 +11,9 @@ function Aboutpage() {
           />
         </div>
         <div className="flex-1 bg-white rounded-md p-4">
-          <h4 className="text-h4 font-bold text-primary">ประวัติของบริษัท</h4>
+          <h4 className="text-h4 font-bold text-primary mb-4">
+            ประวัติของบริษัท
+          </h4>
           <p className="text-nm text-gray2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
             placeat possimus pariatur amet quisquam vitae repellat sed delectus
@@ -22,7 +24,9 @@ function Aboutpage() {
       </div>
       <div className="flex gap-4">
         <div className="flex-1 bg-white rounded-md p-4">
-          <h4 className="text-h4 font-bold text-primary">ประวัติของบริษัท</h4>
+          <h4 className="text-h4 font-bold text-primary mb-4">
+            ประวัติของบริษัท
+          </h4>
           <p className="text-nm text-gray2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
             eum ducimus tempore ex maxime iste vero, a totam magnam possimus
