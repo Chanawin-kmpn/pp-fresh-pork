@@ -14,11 +14,11 @@ function ProductDetail({ params }) {
   }
 
   return (
-    <div className="flex gap-8 items-start">
+    <div className="flex gap-4 items-start">
       <div className="flex-1 ">
         <img className="rounded-md mx-auto" src={product.productImg} alt="" />
       </div>
-      <div className="flex-1 flex flex-col gap-4 bg-white p-8 rounded-md">
+      <div className="flex-1 flex flex-col gap-4 bg-white p-4 rounded-md">
         <div className="product-name flex flex-col gap-2">
           <h4 className="text-h4 font-bold text-primary">{product.name}</h4>
           <p className="text-nm text-gray2">{product.description}</p>
