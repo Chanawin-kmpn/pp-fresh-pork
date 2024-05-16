@@ -1,16 +1,42 @@
 import React from "react";
-import Image from "next/image";
 function Aboutpage() {
   return (
-    <div className="container mx-auto">
-      <h3>About page</h3>
-      <p>This is about page</p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-        tempore quas autem placeat suscipit perspiciatis, quia laborum repellat
-        facere necessitatibus nemo dolor ab rem aliquid eius similique unde!
-        Iusto, nulla?
-      </p>
+    <div className="container mx-auto flex flex-col gap-16">
+      <div className="flex gap-4">
+        <div className="flex-1">
+          <img
+            className="mr-auto rounded-md"
+            src="https://fakeimg.pl/544x468/"
+            alt=""
+          />
+        </div>
+        <div className="flex-1 bg-white rounded-md p-4">
+          <h4 className="text-h4 font-bold text-primary">ประวัติของบริษัท</h4>
+          <p className="text-nm text-gray2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+            placeat possimus pariatur amet quisquam vitae repellat sed delectus
+            obcaecati architecto? Vero debitis ullam libero accusamus maiores,
+            vitae quam animi minus.
+          </p>
+        </div>
+      </div>
+      <div className="flex gap-4">
+        <div className="flex-1 bg-white rounded-md p-4">
+          <h4 className="text-h4 font-bold text-primary">ประวัติของบริษัท</h4>
+          <p className="text-nm text-gray2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+            eum ducimus tempore ex maxime iste vero, a totam magnam possimus
+            nulla soluta dolorum eius eveniet. Non minima facere tempore eius!
+          </p>
+        </div>
+        <div className="flex-1">
+          <img
+            className="ml-auto rounded-md"
+            src="https://fakeimg.pl/544x468/"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 }

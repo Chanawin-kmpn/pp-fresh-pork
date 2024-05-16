@@ -53,7 +53,10 @@ const CertificationModal = () => {
       </ul>
 
       {isOpenModal && (
-        <div className="modal flex justify-center items-center fixed z-50 left-0 top-0 w-full h-full overflow-auto bg-black1 bg-opacity-80">
+        <div
+          className="modal flex justify-center items-center fixed z-50 left-0 top-0 w-full h-full overflow-auto bg-black1 bg-opacity-80"
+          onClick={closeModal}
+        >
           <div
             className="modal-content relative bg-gray5 w-fit h-full text-center"
             onClick={(e) => e.stopPropagation()}
