@@ -13,13 +13,15 @@ function Nav() {
 
   return (
     <nav className="w-full bg-white flex justify-between items-center px-20 py-4">
-      <Image
-        src="/assets/images/logo/ppfreshpork-logo.png"
-        width={160}
-        height={116}
-        alt="Logo"
-        priority={true}
-      />
+      <Link href="/">
+        <Image
+          src="/assets/images/logo/ppfreshpork-logo.png"
+          width={160}
+          height={116}
+          alt="Logo"
+          priority={true}
+        />
+      </Link>
       <ul className="flex gap-8">
         <li>
           <Link
@@ -28,7 +30,7 @@ function Nav() {
             }`}
             href="/products"
           >
-            หน้าแรก
+            ผลิตภัณฑ์
           </Link>
         </li>
         <li>
