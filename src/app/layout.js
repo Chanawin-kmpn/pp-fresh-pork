@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body className="font-sans bg-primary flex flex-col gap-16">
+      <body className="font-sans bg-third flex flex-col gap-16">
         <Nav />
         <Main>{children}</Main>
         <Footer />

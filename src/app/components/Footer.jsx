@@ -56,7 +56,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="self-stretch bg-primary text-gray5 text-center py-8">
+      <div className="self-stretch bg-third text-black2 text-center py-8">
         <p>Copyright 2024 © P.P. Fresh Pork </p>
       </div>
     </footer>

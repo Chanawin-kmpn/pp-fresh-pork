@@ -25,7 +25,7 @@ function Nav() {
       <ul className="flex gap-8">
         <li>
           <Link
-            className={`text-lg transition-all duration-75 ease-in-out  hover:border-b-2 hover:border-primary ${
+            className={`text-lg transition-all duration-75 ease-in-out  hover:border-b-2 hover:border-primary hover:text-primary ${
               isActive("/products") ? "font-bold text-primary" : ""
             }`}
             href="/products"
@@ -35,7 +35,7 @@ function Nav() {
         </li>
         <li>
           <Link
-            className={`text-lg transition-all duration-75 ease-in-out  hover:border-b-2 hover:border-primary ${
+            className={`text-lg transition-all duration-75 ease-in-out  hover:border-b-2 hover:border-primary hover:text-primary ${
               isActive("/myservice") ? "font-bold text-primary" : ""
             }`}
             href="/myservice"
@@ -45,7 +45,7 @@ function Nav() {
         </li>
         <li>
           <Link
-            className={`text-lg transition-all duration-75  ease-in-out hover:border-b-2 hover:border-primary ${
+            className={`text-lg transition-all duration-75  ease-in-out hover:border-b-2 hover:border-primary hover:text-primary ${
               isActive("/about") ? "font-bold text-primary" : ""
             }`}
             href="/about"
@@ -55,7 +55,7 @@ function Nav() {
         </li>
         <li>
           <Link
-            className={`text-lg transition-all duration-75  ease-in-out hover:border-b-2 hover:border-primary ${
+            className={`text-lg transition-all duration-75  ease-in-out hover:border-b-2 hover:border-primary hover:text-primary ${
               isActive("/contact") ? "font-bold text-primary" : ""
             }`}
             href="/contact"
