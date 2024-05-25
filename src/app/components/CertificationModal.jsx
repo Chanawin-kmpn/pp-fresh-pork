@@ -6,12 +6,20 @@ const CertificationModal = () => {
 
   const certificates = [
     {
-      src: "/assets/images/certificates/GMP-certificate.png",
+      src: "/assets/images/certificates/ghp-certificate.jpg",
+      alt: "GHP Certificate",
+    },
+    {
+      src: "/assets/images/certificates/gmp-certificate.png",
       alt: "GMP Certificate",
     },
     {
-      src: "/assets/images/certificates/HACCp-certificate.png",
+      src: "/assets/images/certificates/haccp-certificate.jpg",
       alt: "HACCP Certificate",
+    },
+    {
+      src: "/assets/images/certificates/revenue-department.png",
+      alt: "Revenue Department",
     },
   ];
 
@@ -40,11 +48,11 @@ const CertificationModal = () => {
 
   return (
     <div>
-      <ul className="flex flex-wrap gap-8">
+      <ul className="flex flex-wrap gap-4 lg:gap-8">
         {certificates.map((image, index) => (
           <li
             key={index}
-            className="basis-[256px] cursor-pointer"
+            className="flex-1 basis-[167.5px] lg:basis-[256px] cursor-pointer"
             onClick={() => openModal(image.src)}
           >
             <img src={image.src} alt={image.alt} />
