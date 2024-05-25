@@ -9,10 +9,6 @@
   }
 }
 
-.welcome-title {
-  animation: fade-in 1000ms ease-in;
-}
-
 @keyframes slide-in {
   from {
     transform: translateY(-100%);
@@ -24,8 +20,12 @@
   }
 }
 
+.welcome-title {
+  animation: slide-in 1000ms ease-in;
+}
+
 .animated-text {
-  animation: slide-in 500ms ease-out forwards;
+  animation: fade-in 500ms ease-out forwards;
 }
 
 .animated-text:nth-child(1) {
@@ -42,4 +42,14 @@
 
 .animated-text:nth-child(4) {
   animation-delay: 2.5s;
+}
+
+@media (min-width: 1024px) {
+  .welcome-title {
+    animation: fade-in 1000ms ease-in;
+  }
+
+  .animated-text {
+    animation: slide-in 500ms ease-out forwards;
+  }
 }
