@@ -12,7 +12,7 @@ export default function Home() {
             COME
           </span>
         </p>
-        <p className="text-[3rem] leading-[1.1rem] font-bold text-gray5 bg-primary py-[5rem] lg:px-[56px] lg:py-[170px] lg:text-7xl">
+        <p className="text-5xl leading-[1.1rem] font-bold text-gray5 bg-primary -mx-1 py-[5rem] lg:text-7xl lg:px-[56px] lg:py-[170px] lg:mx-0">
           P.P. Fresh Pork
         </p>
         <div className="flex flex-col gap-4 lg:absolute lg:top-[85%] lg:-right-[100px]">
