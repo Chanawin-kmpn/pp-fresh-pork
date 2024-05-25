@@ -2,7 +2,7 @@ import React from "react";
 function Aboutpage() {
   return (
     <div className="container mx-auto flex flex-col gap-4 lg:gap-16">
-      <div className="flex flex-col gap-4 lg:flex-row lg:gap-2">
+      <div className="flex flex-col gap-2 lg:flex-row lg:gap-4">
         <div className="flex-1">
           <img
             className="mr-auto rounded-md"

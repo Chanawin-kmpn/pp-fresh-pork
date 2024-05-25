@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <div className="container mx-auto">
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-2 lg:flex-row lg:gap-4">
         <div className="flex-1">
           <iframe
             className="w-full h-[461px] rounded-md"
@@ -12,28 +12,32 @@ function Contact() {
           ></iframe>
         </div>
         <div className="flex-1 bg-white p-4">
-          <h4 className="text-h4 font-bold text-primary mb-4">ติดต่อเรา</h4>
+          <h4 className="text-h4 font-bold text-primary mb-2 lg:mb-4">
+            ติดต่อเรา
+          </h4>
           <div className="flex flex-col gap-4">
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 lg:flex-row">
               <h6 className="text-h6 font-bold">ที่อยู่:</h6>
-              <p>
+              <p className="text-sm lg:text-nm">
                 98/6 หมู่ 5 ซอย ราษฏร์สามัคคี 3 ตำบล ท่าข้าม อำเภอ สามพราน
                 จังหวัด นครปฐม 73110
               </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 lg:flex-row">
               <h6 className="text-h6 font-bold">วันเวลาทำการ:</h6>
-              <p>จันทร์ - เสาร์ เวลา 9:00 - 17:00 น.</p>
+              <p className="text-sm lg:text-nm">
+                จันทร์ - เสาร์ เวลา 9:00 - 17:00 น.
+              </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 lg:flex-row">
               <h6 className="text-h6 font-bold">โทร:</h6>
-              <p>
+              <p className="text-sm lg:text-nm">
                 085-247-9479 <br /> 080-931-3628{" "}
               </p>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2 lg:flex-row">
               <h6 className="text-h6 font-bold">อีเมล:</h6>
-              <p>ppfreshpork@gmail.com</p>
+              <p className="text-sm lg:text-nm">ppfreshpork@gmail.com</p>
             </div>
           </div>
         </div>
