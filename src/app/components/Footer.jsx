@@ -62,8 +62,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="self-stretch bg-third text-black2 text-center py-8">
-        <p>Copyright 2024 © P.P. Fresh Pork </p>
+      <div className="self-stretch bg-third text-black2 text-center py-8 ">
+        <p className="text-sm lg:text-nm">Copyright 2024 © P.P. Fresh Pork </p>
       </div>
     </footer>
   );
