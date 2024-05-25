@@ -10,8 +10,9 @@ function Card({ currentItems }) {
           key={product.productId}
           href={`/products/${product.productId}`}
           passHref
+          className="flex-1 basis-[167px] max-w-[167.5px] xsm:max-w-[192.5px] lg:flex-none lg:basis-0 lg:max-w-none"
         >
-          <li className="card flex-1 flex flex-col basis-[165px] w-[167px] h-[265px] lg:min-w-[256px] max-w-[256px] 2xl:max-w-[288px] lg:h-[400px] rounded-lg overflow-hidden shadow-md">
+          <li className="card flex flex-col h-[265px] lg:min-w-[256px] 2xl:max-w-[288px] lg:h-[400px] rounded-lg overflow-hidden shadow-md">
             <div className="product-image">
               <img src={product.productImg} alt="product image" />
             </div>
