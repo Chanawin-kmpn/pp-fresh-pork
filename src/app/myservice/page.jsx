@@ -11,7 +11,7 @@ function Service() {
           <img
             className="rounded-md"
             src="https://fakeimg.pl/544x468/"
-            alt=""
+            alt="Corporation Service"
           />
         </div>
         <div className="flex-1  bg-white p-4">

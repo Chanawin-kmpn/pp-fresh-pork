@@ -4,14 +4,14 @@ import Link from "next/link";
 
 function Card({ currentItems }) {
   return (
-    <ul className="product-cards-container flex flex-wrap gap-8">
+    <ul className="product-cards-container flex flex-wrap gap-x-2 gap-y-4 lg:gap-8">
       {currentItems.map((product) => (
         <Link
           key={product.productId}
           href={`/products/${product.productId}`}
           passHref
         >
-          <li className="card flex-1 flex flex-col min-w-[256px] xl:max-w-[256px] 2xl:max-w-[288px] h-[400px] rounded-lg overflow-hidden shadow-md">
+          <li className="card flex-1 flex flex-col basis-[165px] w-[167px] h-[265px] lg:min-w-[256px] max-w-[256px] 2xl:max-w-[288px] lg:h-[400px] rounded-lg overflow-hidden shadow-md">
             <div className="product-image">
               <img src={product.productImg} alt="product image" />
             </div>

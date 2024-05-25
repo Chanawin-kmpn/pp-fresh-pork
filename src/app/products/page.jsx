@@ -6,14 +6,14 @@ import Paginator from "../components/Paginator";
 import { products } from "../data/products";
 
 function Product() {
-  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [itemsPerPage, setItemsPerPage] = useState(8);
   const [categoryValue, setCategoryValue] = useState(
     categories[0]?.categoryId || 0
   );
 
   useEffect(() => {
     const handleresize = () => {
-      setItemsPerPage(window.innerWidth > 1536 ? 12 : 9);
+      setItemsPerPage(window.innerWidth > 1536 ? 12 : 8);
     };
 
     handleresize();
@@ -25,16 +25,16 @@ function Product() {
     };
   }, []);
   return (
-    <div className="container flex gap-8 mx-auto">
-      <section className="filter-section flex-2 w-[256px] bg-white p-4 rounded-md">
-        <form className="flex flex-col gap-2 sticky top-4">
+    <div className="container flex flex-col gap-4 mx-auto lg:flex-row lg:gap-8">
+      <section className="filter-section flex-2 w-full bg-white p-2 rounded-md lg:w-[256px] lg:p-4">
+        <form className="flex items-center gap-2 sticky top-4 lg:flex-col lg:items-start">
           <label
             htmlFor="categories"
             className="text-lg font-bold text-primary"
           >
             ผลิตภัณฑ์
           </label>
-          <div className="relative">
+          <div className="relative w-full flex-1">
             <select
               name="categories"
               className="w-full appearance-none border border-gray5 rounded-md px-4 py-2"

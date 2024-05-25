@@ -46,7 +46,7 @@ function Paginator({ items, itemsPerPage, type }) {
             key={number}
             onClick={() => goToPage(number)}
             className={`text-gray2 border px-4 py-2 rounded-md ${
-              currentPage === number ? "font-bold text-gray5 bg-primary" : ""
+              currentPage === number ? "font-bold text-black2 bg-third" : ""
             } mx-4`}
           >
             {number}
