@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./homepage.css";
 export default function Home() {
   return (
-    <div className="container flex flex-col justify-center items-center gap-16">
+    <div className="self-center container flex flex-col justify-center items-center gap-16">
       <div className="relative">
         <p className="welcome-title top-0 -left-[34%] text-[4rem] font-bold text-primary leading-[1.1] tracking-wider lg:absolute lg:text-8xl">
           WEL
