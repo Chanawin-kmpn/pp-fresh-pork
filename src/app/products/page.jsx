@@ -6,14 +6,14 @@ import Paginator from "../components/Paginator";
 import { products } from "../data/products";
 
 function Product() {
-  const [itemsPerPage, setItemsPerPage] = useState(8);
+  const [itemsPerPage, setItemsPerPage] = useState(9);
   const [categoryValue, setCategoryValue] = useState(
     categories[0]?.categoryId || 0
   );
 
   useEffect(() => {
     const handleresize = () => {
-      setItemsPerPage(window.innerWidth > 1536 ? 12 : 8);
+      setItemsPerPage(window.innerWidth > 1536 ? 12 : 9);
     };
 
     handleresize();

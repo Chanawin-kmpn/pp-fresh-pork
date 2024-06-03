@@ -53,7 +53,7 @@ function Nav() {
       >
         {navMenus.map((menu, index) => (
           <li
-            className="first-of-type:border-t  border-b border-gray3 py-4 lg:border-0 lg:first-of-type:border-0"
+            className="first-of-type:border-t border-b border-gray3 py-4 lg:border-0 lg:first-of-type:border-0"
             key={index}
           >
             <Link

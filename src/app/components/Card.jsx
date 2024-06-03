@@ -4,20 +4,20 @@ import Link from "next/link";
 
 function Card({ currentItems }) {
   return (
-    <ul className="product-cards-container flex flex-wrap gap-x-2 gap-y-4 lg:gap-8">
+    <ul className="product-cards-container flex flex-wrap md:-m-2 md:w-[calc(100%+16px)] lg:w-[calc(100%+4rem)] lg:-m-4 xl:-m-4">
       {currentItems.map((product) => (
         <Link
           key={product.productId}
           href={`/products/${product.productId}`}
           passHref
-          className="flex-1 basis-[160px] xxxsm:max-w-[156px] xxsm:max-w-[167.5px] xsm:max-w-[192.5px] lg:flex-none lg:basis-0 lg:max-w-none"
+          className="m-2 w-[calc(50%-1rem)] max-h-[400px] sm:w-[calc(33.3333%-1rem)] md:w-[calc(25%-1rem)] md:m-2 lg:w-[calc(50%-2rem)] lg:m-4 xl:w-[calc(33.3333%-2rem)] xl:m-4 2xl:w-[calc(25%-2rem)]"
         >
-          <li className="card flex flex-col h-[265px] lg:min-w-[256px] 2xl:max-w-[288px] lg:h-[400px] rounded-lg overflow-hidden shadow-md">
+          <li className="card flex flex-col h-[265px] lg:h-[400px] rounded-lg overflow-hidden shadow-md">
             <div className="product-image">
               <img src={product.productImg} alt="product image" />
             </div>
             <div className="product-detail relative flex-1 flex flex-col gap-4 justify-center items-center bg-white left-bottom-bg right-top-bg">
-              <p className="text-lg font-bold text-primary z-10">
+              <p className="text-md md:text-lg font-bold text-primary z-10">
                 {product.name}
               </p>
               <p className="text-gray2 z-10">
