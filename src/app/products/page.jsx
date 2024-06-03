@@ -13,7 +13,13 @@ function Product() {
 
   useEffect(() => {
     const handleresize = () => {
-      setItemsPerPage(window.innerWidth > 1536 ? 12 : 9);
+      if (window.innerWidth > 1536 || window.innerWidth >= 768) {
+        setItemsPerPage(12);
+      } else if (window.innerWidth > 1280 || window.innerWidth >= 640) {
+        setItemsPerPage(9);
+      } else if (window.innerWidth > 1024) {
+        setItemsPerPage(8);
+      }
     };
 
     handleresize();
